@@ -125,10 +125,10 @@
 
     space_layer {
     bindings = <
-    &kp ESC           &trans  &trans  &trans  &trans  &trans            &trans   &trans   &trans  &trans     &trans  &kp DEL
-    &trans            &trans  &trans  &trans  &trans  &LG(SPACE)        &kp LEFT &kp DOWN &kp UP  &kp RIGHT  &trans  &trans
-    &mo _NAVIGATION   &trans  &trans  &trans  &trans  &trans            &trans   &trans   &trans  &trans     &trans  &trans
-                                        &trans  &trans    &trans    &trans     &trans
+    &kp ESC           &trans  &trans  &trans  &trans  &trans               &trans   &trans   &trans  &trans     &trans  &kp DEL
+    &trans            &trans  &trans  &trans  &trans  &kp LG(SPACE)        &kp LEFT &kp DOWN &kp UP  &kp RIGHT  &trans  &trans
+    &mo _NAVIGATION   &trans  &trans  &trans  &trans  &trans               &trans   &trans   &trans  &trans     &trans  &trans
+                                                &trans  &trans    &trans    &trans     &trans
                     >;
             };
 
