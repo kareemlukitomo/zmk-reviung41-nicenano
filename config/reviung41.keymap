@@ -114,7 +114,7 @@
 
     // SPACE LAYER
     // ,-------------------------------------------------- -+         +------------------------------------------.
-    // |   ESC  |        |       |         |       |        |         |      |      |      |      |      |  DEL  |
+    // |   ESC  |        |       |         |       |        |         |      |      |      |      |      | PSCRN |
     // |--------+--------+-------+---------+-------+--------+         +------+------+------+------+------+-------|
     // |        |        |       |         |       |LGUI+SPC|         | LEFT | DOWN |  UP  | RIGHT|      |       |
     // |--------+--------+-------+---------+-------+--------+         +------+------+------+------+------+-------|
@@ -125,7 +125,7 @@
 
     space_layer {
     bindings = <
-    &kp ESC           &trans  &trans  &trans  &trans  &trans               &trans   &trans   &trans  &trans     &trans  &kp DEL
+    &kp ESC           &trans  &trans  &trans  &trans  &trans               &trans   &trans   &trans  &trans     &trans  &kp PSCRN
     &trans            &trans  &trans  &trans  &trans  &kp LG(SPACE)        &kp LEFT &kp DOWN &kp UP  &kp RIGHT  &trans  &trans
     &mo _NAVIGATION   &trans  &trans  &trans  &trans  &trans               &trans   &trans   &trans  &trans     &trans  &trans
                                                 &trans  &trans    &trans    &trans     &trans
