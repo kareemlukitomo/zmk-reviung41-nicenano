@@ -86,10 +86,10 @@
     //                                   +-------------/                \--------------+
     lower_layer {
     bindings = <
-    &kp GRAVE &trans    &trans  &trans    &trans    &trans                &kp LPAR    &kp RPAR   &kp EQUAL  &kp AMPS &kp PIPE &trans
-    &trans    &kp LG(A) &trans  &trans    &trans    &trans                &kp LBRC    &kp RBRC   &kp UNDER  &kp DLLR &kp HASH &trans
-    &trans    &kp LG(Z) &trans  &kp LG(C) &kp LG(V) &trans                &kp LBKT    &kp RBKT   &kp LT     &kp GT   &kp BSLH &trans
-                               &trans      &kp DEL       &kp RET      &trans    &mo _ADJUST
+    &kp GRAVE &kp LG(Q) &kp LG(W) &trans    &kp LG(R) &trans                &kp LPAR    &kp RPAR   &kp EQUAL  &kp AMPS &kp PIPE &trans
+    &trans    &kp LG(A) &kp LG(S) &trans    &kp LG(F) &trans                &kp LBRC    &kp RBRC   &kp UNDER  &kp DLLR &kp HASH &trans
+    &trans    &kp LG(Z) &trans    &kp LG(C) &kp LG(V) &trans                &kp LBKT    &kp RBKT   &kp LT     &kp GT   &kp BSLH &trans
+                                      &trans      &kp DEL       &kp RET      &trans    &mo _ADJUST
                     >;
             };
 
