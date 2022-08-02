@@ -68,9 +68,9 @@
     //                               +-------------/            \--------------+
     default_layer {
     bindings = <
-    &mt LALT TAB  &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp RIGHT_GUI
-    &kp LCTRL     &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-    &mt LSHFT ESC &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT ENTER
+    &mt LALT TAB &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp RIGHT_GUI
+    &kp LCTRL    &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+    &kp LSHFT    &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT ENTER
                 &mo _LOWER  &kp BSPC &lt _SPACE ESC  &kp SPACE  &mo _RAISE
                     >;
             };
@@ -78,17 +78,17 @@
     // ,---------------------------------------------------+         +------------------------------------------.
     // | GRAVE |       |       |         |       |         |         |  (   |   )  |   =  |   &  |   |  |       |
     // |-------+-------+-------+---------+-------+---------+         +------+------+------+------+------+-------|
-    // |       |       |       |         |       |         |         |  {   |   }  |   _  |   $  |   #  |       |
+    // |       | CMD+A |       |         |       |         |         |  {   |   }  |   _  |   $  |   #  |       |
     // |-------+-------+-------+---------+-------+---------+         +------+------+------+------+------+-------|
-    // |       |       |       |         |       |         |         |  [   |   ]  |   <  |   >  |   \  |       |
+    // |       | CMD+Z |       |  CMD+C  | CMD+V |         |         |  [   |   ]  |   <  |   >  |   \  |       |
     // |-------+-------+-------+---------+-------+---------+         +------+------+------+------+------+-------|
     //                                   | ____ |  DEL |      ENTER     | ____  |_ADJUST|
     //                                   +-------------/                \--------------+
     lower_layer {
     bindings = <
-    &kp GRAVE &trans  &trans  &trans  &trans  &trans                &kp LPAR    &kp RPAR   &kp EQUAL  &kp AMPS &kp PIPE &trans
-    &trans    &trans  &trans  &trans  &trans  &trans                &kp LBRC    &kp RBRC   &kp UNDER  &kp DLLR &kp HASH &trans
-    &trans    &trans  &trans  &trans  &trans  &trans                &kp LBKT    &kp RBKT   &kp LT     &kp GT   &kp BSLH &trans
+    &kp GRAVE &trans    &trans  &trans    &trans    &trans                &kp LPAR    &kp RPAR   &kp EQUAL  &kp AMPS &kp PIPE &trans
+    &trans    &kp LG(A) &trans  &trans    &trans    &trans                &kp LBRC    &kp RBRC   &kp UNDER  &kp DLLR &kp HASH &trans
+    &trans    &kp LG(Z) &trans  &kp LG(C) &kp LG(V) &trans                &kp LBKT    &kp RBKT   &kp LT     &kp GT   &kp BSLH &trans
                                &trans      &kp DEL       &kp RET      &trans    &mo _ADJUST
                     >;
             };
