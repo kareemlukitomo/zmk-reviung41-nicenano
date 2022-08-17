@@ -118,17 +118,17 @@
     // |--------+--------+-------+--------+-------+--------+         +------+------+------+------+------+-------|
     // |        | LSHIFT |       |LGUI+UP | PSCRN |LGUI+SPC|         | LEFT | DOWN |  UP  | RIGHT|      |       |
     // |--------+--------+-------+--------+-------+--------+         +------+------+------+------+------+-------|
-    // |  _NAVI | C_NEXT | C_PREV|  MPLY  |       |        |         |      |      |      |      |      |       |
+    // |  _NAVI | C_NEXT | C_PREV|PLY/PAUS|       |        |         |      |      |      |      |      |       |
     // |--------+--------+-------+--------+-------+--------+         +------+------+------+------+------+-------|
     //                                     | ____ | ____ |     _______      | ____  | ____ |
     //                                     +-------------/                \--------------+
 
     space_layer {
     bindings = <
-    &kp LALT         &trans     &trans     &trans     &trans    &kp PSCRN            &trans   &trans   &trans  &trans    &trans &trans
-    &trans           &kp LSHFT  &trans     &kp LG(UP) &kp PSCRN &kp LG(SPACE)        &kp LEFT &kp DOWN &kp UP  &kp RIGHT &trans &trans
-    &mo _NAVIGATION  &kp C_PREV &kp C_NEXT &MPLY      &trans    &trans               &trans   &trans   &trans  &trans    &trans &trans
-                                                        &trans  &trans    &trans    &trans     &trans
+    &kp LALT         &trans     &trans     &trans           &trans    &trans               &trans   &trans   &trans  &trans    &trans &trans
+    &trans           &kp LSHFT  &trans     &kp LG(UP)       &kp PSCRN &kp LG(SPACE)        &kp LEFT &kp DOWN &kp UP  &kp RIGHT &trans &trans
+    &mo _NAVIGATION  &kp C_PREV &kp C_NEXT &kp C_PLAY_PAUSE &trans    &trans               &trans   &trans   &trans  &trans    &trans &trans
+                                                                &trans  &trans    &trans    &trans     &trans
                     >;
             };
 
