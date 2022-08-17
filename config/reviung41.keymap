@@ -62,7 +62,7 @@
 //       ├──────┼──────┼──────┼──────┼──────┼──────┤            ├──────────┼──────┼──────┼──────┼──────┼──────┤
 //       │ CTRL │  A   │  S   │  D   │  F   │  G   │            │  H       │  J   │  K   │  L   │  ;   │  ' " │
 //       ├──────┼──────┼──────┼──────┼──────┼──────┤            ├──────────┼──────┼──────┼──────┼──────┼──────┤
-//       │SFT_CL│  Z   │  X   │  C   │  V   │  B   │            │  N       │  M   │  ,   │  .   │  /   │ ENT  │
+//       │LSHIFT│  Z   │  X   │  C   │  V   │  B   │            │  N       │  M   │  ,   │  .   │  /   │ ENT  │
 //       ├──────┼──────┼──────┼──────┼──────┼──────┤            ├──────────┼──────┼──────┼──────┼──────┼──────┤
     //                               |_Lower| BSPC | _SPACE(ESC)|   SPACE  |_Raise|
     //                               +-------------/            \--------------+
@@ -114,21 +114,21 @@
 
     // SPACE LAYER
     // ,------------------------------------------------- -+         +------------------------------------------.
-    // |   ESC  |        |       |        |       |  PSCRN |         |      |      |      |      |      |       |
+    // |   ESC  |        |       |        |       |        |         |      |      |      |      |      |       |
     // |--------+--------+-------+--------+-------+--------+         +------+------+------+------+------+-------|
-    // |        |        |       |LGUI+UP |       |LGUI+SPC|         | LEFT | DOWN |  UP  | RIGHT|      |       |
+    // |        | LSHIFT |       |LGUI+UP | PSCRN |LGUI+SPC|         | LEFT | DOWN |  UP  | RIGHT|      |       |
     // |--------+--------+-------+--------+-------+--------+         +------+------+------+------+------+-------|
-    // |  _NAVI |        |       |        |       |        |         |      |      |      |      |      |       |
+    // |  _NAVI | C_NEXT | C_PREV|  MPLY  |       |        |         |      |      |      |      |      |       |
     // |--------+--------+-------+--------+-------+--------+         +------+------+------+------+------+-------|
     //                                     | ____ | ____ |     _______      | ____  | ____ |
     //                                     +-------------/                \--------------+
 
     space_layer {
     bindings = <
-    &kp LALT         &trans &trans &trans     &trans &kp PSCRN            &trans   &trans   &trans  &trans    &trans &trans
-    &trans           &trans &trans &kp LG(UP) &trans &kp LG(SPACE)        &kp LEFT &kp DOWN &kp UP  &kp RIGHT &trans &trans
-    &mo _NAVIGATION  &trans &trans &trans     &trans &trans               &trans   &trans   &trans  &trans    &trans &trans
-                                                &trans  &trans    &trans    &trans     &trans
+    &kp LALT         &trans     &trans     &trans     &trans    &kp PSCRN            &trans   &trans   &trans  &trans    &trans &trans
+    &trans           &kp LSHFT  &trans     &kp LG(UP) &kp PSCRN &kp LG(SPACE)        &kp LEFT &kp DOWN &kp UP  &kp RIGHT &trans &trans
+    &mo _NAVIGATION  &kp C_PREV &kp C_NEXT &MPLY      &trans    &trans               &trans   &trans   &trans  &trans    &trans &trans
+                                                        &trans  &trans    &trans    &trans     &trans
                     >;
             };
 
