@@ -86,9 +86,9 @@
     //                                   +-------------/                \--------------+
     lower_layer {
     bindings = <
-    &kp GRAVE &kp LG(Q) &kp LG(W) &trans    &kp LG(R) &trans                &kp LPAR    &kp RPAR   &kp EQUAL  &kp AMPS &kp PIPE &trans
-    &trans    &kp LG(A) &kp LG(S) &trans    &kp LG(F) &trans                &kp LBRC    &kp RBRC   &kp UNDER  &kp DLLR &kp HASH &trans
-    &trans    &kp LG(Z) &trans    &kp LG(C) &kp LG(V) &trans                &kp LBKT    &kp RBKT   &kp LT     &kp GT   &kp BSLH &trans
+    &kp GRAVE &kp LG(Q) &kp LG(W) &kp LG(E) &kp LG(R) &kp LG(T)             &kp LPAR    &kp RPAR   &kp EQUAL  &kp AMPS &kp PIPE &trans
+    &trans    &kp LG(A) &kp LG(S) &kp LG(D) &kp LG(F) &kp LG(G)             &kp LBRC    &kp RBRC   &kp UNDER  &kp DLLR &kp HASH &trans
+    &trans    &kp LG(Z) &kp LG(X) &kp LG(C) &kp LG(V) &kp LG(B)             &kp LBKT    &kp RBKT   &kp LT     &kp GT   &kp BSLH &trans
                                       &trans      &kp DEL       &kp RET      &trans    &mo _ADJUST
                     >;
             };
@@ -113,21 +113,21 @@
             };
 
     // SPACE LAYER
-    // ,-------------------------------------------------- -+         +------------------------------------------.
-    // |   ESC  |        |       |         |       |        |         |      |      |      |      |      | PSCRN |
-    // |--------+--------+-------+---------+-------+--------+         +------+------+------+------+------+-------|
-    // |        |        |       |         |       |LGUI+SPC|         | LEFT | DOWN |  UP  | RIGHT|      |       |
-    // |--------+--------+-------+---------+-------+--------+         +------+------+------+------+------+-------|
-    // |  _NAVI |        |       |         |       |        |         |      |      |      |      |      |       |
-    // |--------+--------+-------+---------+-------+--------+         +------+------+------+------+------+-------|
+    // ,------------------------------------------------- -+         +------------------------------------------.
+    // |   ESC  |        |       |        |       |  PSCRN |         |      |      |      |      |      |       |
+    // |--------+--------+-------+--------+-------+--------+         +------+------+------+------+------+-------|
+    // |        |        |       |LGUI+UP |       |LGUI+SPC|         | LEFT | DOWN |  UP  | RIGHT|      |       |
+    // |--------+--------+-------+--------+-------+--------+         +------+------+------+------+------+-------|
+    // |  _NAVI |        |       |        |       |        |         |      |      |      |      |      |       |
+    // |--------+--------+-------+--------+-------+--------+         +------+------+------+------+------+-------|
     //                                     | ____ | ____ |     _______      | ____  | ____ |
     //                                     +-------------/                \--------------+
 
     space_layer {
     bindings = <
-    &kp ESC           &trans  &trans  &trans  &trans  &trans               &trans   &trans   &trans  &trans     &trans  &kp PSCRN
-    &trans            &trans  &trans  &trans  &trans  &kp LG(SPACE)        &kp LEFT &kp DOWN &kp UP  &kp RIGHT  &trans  &trans
-    &mo _NAVIGATION   &trans  &trans  &trans  &trans  &trans               &trans   &trans   &trans  &trans     &trans  &trans
+    &kp LALT         &trans &trans &trans     &trans &kp PSCRN            &trans   &trans   &trans  &trans    &trans &trans
+    &trans           &trans &trans &kp LG(UP) &trans &kp LG(SPACE)        &kp LEFT &kp DOWN &kp UP  &kp RIGHT &trans &trans
+    &mo _NAVIGATION  &trans &trans &trans     &trans &trans               &trans   &trans   &trans  &trans    &trans &trans
                                                 &trans  &trans    &trans    &trans     &trans
                     >;
             };
